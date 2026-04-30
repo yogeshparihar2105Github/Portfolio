@@ -23,13 +23,13 @@ export function Contact() {
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
             I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto text-base group" onClick={() => window.location.href = 'mailto:yogeshparihar@example.com'}>
+            <Button size="lg" className="w-full sm:w-auto text-base group" onClick={() => window.location.href = 'mailto:yogeshparihar2105@gmail.com'}>
               <Mail className="mr-2 h-5 w-5" />
               Say Hello
             </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto text-base group" onClick={() => window.open('https://linkedin.com', '_blank')}>
+            <Button size="lg" variant="outline" className="w-full sm:w-auto text-base group" onClick={() => window.open('https://www.linkedin.com/in/yogesh-parihar-56a30816b/', '_blank')}>
               Connect on LinkedIn
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>

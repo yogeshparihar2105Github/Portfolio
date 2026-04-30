@@ -13,6 +13,8 @@ const projects = [
     tech: ["React", "Chart.js", "Golang", "PostgreSQL"],
     placeholderText: "Networth Projection Dashboard",
     color: "from-blue-500/20 to-purple-500/20",
+    link: "https://dev.mynetworth.pro/",
+    image: "/networth-dashboard.png",
   },
   {
     title: "MetaStockPicker",
@@ -21,6 +23,8 @@ const projects = [
     tech: ["Unity3D", "Three.js", "React", "Golang"],
     placeholderText: "3D Stock Market Interface",
     color: "from-green-500/20 to-emerald-500/20",
+    link: "https://dev.metastockpicker.com/",
+    image: "/metastockpicker.png",
   },
   {
     title: "WikiBedtimeStories",
@@ -29,6 +33,8 @@ const projects = [
     tech: ["React", "Golang", "Media APIs"],
     placeholderText: "Interactive Storybook Platform",
     color: "from-orange-500/20 to-red-500/20",
+    link: "https://wikibedtimestories.com/",
+    image: "/wikibedtimestories.png",
   },
 ]
 
@@ -49,16 +55,30 @@ export function Projects() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className="group relative grid md:grid-cols-2 gap-8 items-center bg-card border border-border rounded-3xl p-6 md:p-8 overflow-hidden hover:border-primary/50 transition-colors"
           >
-            {/* Visual Treatment Placeholder */}
-            <div className={`aspect-video rounded-2xl bg-gradient-to-br ${project.color} flex items-center justify-center border border-border overflow-hidden relative`}>
-              <div className="absolute inset-0 bg-background/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                <Button variant="secondary" className="scale-90 group-hover:scale-100 transition-transform">
+            {/* Visual Treatment Placeholder or Image */}
+            <div
+              className={`aspect-video rounded-2xl bg-gradient-to-br ${project.color} flex items-center justify-center border border-border overflow-hidden relative group/image cursor-pointer`}
+              onClick={() => window.open(project.link, "_blank", "noopener,noreferrer")}
+            >
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover/image:scale-105"
+                />
+              ) : (
+                <span className="text-muted-foreground font-medium text-center px-4 z-10">
+                  {project.placeholderText}
+                </span>
+              )}
+              <div className="absolute inset-0 bg-background/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center z-20">
+                <Button
+                  variant="secondary"
+                  className="scale-90 group-hover:scale-100 transition-transform cursor-pointer"
+                >
                   View Case Study
                 </Button>
               </div>
-              <span className="text-muted-foreground font-medium text-center px-4">
-                {project.placeholderText}
-              </span>
             </div>
 
             {/* Project Info */}
@@ -69,7 +89,7 @@ export function Projects() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 {project.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tech.map((tech) => (
                   <Badge key={tech} variant="secondary">
@@ -79,7 +99,10 @@ export function Projects() {
               </div>
 
               <div className="flex gap-4">
-                <Button className="group/btn">
+                <Button
+                  className="group/btn cursor-pointer"
+                  onClick={() => window.open(project.link, "_blank", "noopener,noreferrer")}
+                >
                   Live Demo
                   <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:-translate-y-1 group-hover/btn:translate-x-1" />
                 </Button>
