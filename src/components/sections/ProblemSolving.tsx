@@ -20,7 +20,7 @@ export function ProblemSolving() {
         <div className="absolute top-0 right-0 p-8 opacity-5">
           <Brain className="w-48 h-48" />
         </div>
-        
+
         <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center justify-between">
           <div>
             <div className="flex items-center gap-3 mb-2">
@@ -28,9 +28,9 @@ export function ProblemSolving() {
               <span className="text-xl font-semibold text-foreground">Problems Solved</span>
             </div>
             <p className="text-muted-foreground mb-6">Active on LeetCode</p>
-            
+
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {["Arrays", "Trees", "Dynamic Programming", "Recursion", "Binary Search", "Graphs"].map((topic) => (
+              {["Arrays", "LinkedList", "Hashmap", "Stack & Queue", "Searching & Sorting Algorithms", "Dynamic Programming", "Recursion", "Trees", "Graphs"].map((topic) => (
                 <div key={topic} className="flex items-center gap-2 text-sm text-muted-foreground bg-secondary/30 px-3 py-2 rounded-lg border border-border/50">
                   <CheckCircle2 className="w-4 h-4 text-green-500" />
                   {topic}

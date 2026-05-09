@@ -42,12 +42,12 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 max-w-5xl flex items-center justify-between">
-        <a 
-          href="#" 
+        <a
+          href="#"
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
           className="text-xl font-bold tracking-tighter"
         >
-          Yogesh<span className="text-muted-foreground">.</span>
+          Yogesh Parihar
         </a>
 
         <div className="flex items-center gap-4">
@@ -66,8 +66,8 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="sm"
               onClick={() => scrollTo('#contact')}
             >
@@ -109,8 +109,8 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
-            <Button 
-              className="w-full mt-2" 
+            <Button
+              className="w-full mt-2"
               onClick={() => scrollTo('#contact')}
             >
               Contact

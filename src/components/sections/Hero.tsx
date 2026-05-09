@@ -29,13 +29,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60"
+          className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-4"
         >
-          Frontend Engineer
-          <br />
-          <span className="text-white/40">Product Builder</span>
-          <br />
-          <span className="text-white/20">Unity Developer</span>
+          AI Product Engineer
         </motion.h1>
 
         <motion.p
@@ -44,8 +40,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          I build scalable web products and immersive interactive experiences. 
-          Bridging the gap between engineering depth and creative range.
+          “I turn ideas into AI-powered products — blending full-stack engineering, rapid prototyping, and interactive experiences to build scalable, user-focused solutions.”
         </motion.p>
 
         <motion.div
@@ -58,7 +53,17 @@ export function Hero() {
             View Projects
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
-          <Button size="lg" variant="outline" className="w-full sm:w-auto group">
+          <Button
+            size="lg"
+            variant="outline"
+            className="w-full sm:w-auto group"
+            onClick={() => {
+              const a = document.createElement('a')
+              a.href = '/Yogesh_Parihar_Resume.pdf'
+              a.download = 'Yogesh_Parihar_Resume.pdf'
+              a.click()
+            }}
+          >
             Download Resume
             <Download className="ml-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
           </Button>
@@ -70,7 +75,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="mt-16 text-sm text-muted-foreground font-medium"
         >
-          <p>4+ years building production-grade products</p>
+          <p>4+ years building production-grade products @ <a href="https://kushmanda.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-4">Kushmanda.ai</a></p>
         </motion.div>
       </div>
     </section>

@@ -19,11 +19,11 @@ export function Experience() {
               Jul 2022 – Present
             </span>
           </div>
-          
+
           <div className="md:col-span-3 relative">
             {/* Timeline Dot */}
             <div className="absolute -left-10 md:-left-[45px] top-3 w-4 h-4 rounded-full bg-primary ring-4 ring-background z-10" />
-            
+
             {/* Timeline Line for Desktop */}
             <div className="hidden md:block absolute top-6 bottom-[-100px] -left-[38px] w-px bg-border" />
 
@@ -36,11 +36,11 @@ export function Experience() {
             >
               <h3 className="text-xl font-bold text-foreground mb-1">Product Engineer II</h3>
               <p className="text-primary font-medium mb-4">kushmanda.ai</p>
-              
+
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>Led frontend development for 3 production-grade platforms using React.js.</span>
+                  <span>Led frontend development for 3 production-grade platforms using React.js and Next.js.</span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -52,15 +52,23 @@ export function Experience() {
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>Designed and integrated robust REST APIs with Golang.</span>
+                  <span>Designed and integrated scalable REST APIs and backend services using Golang.</span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>Improved overall performance, responsiveness, and SEO across all platforms.</span>
+                  <span>Built an intelligent search system using vector embeddings, cosine similarity, and spell-correction algorithms for improved search relevance and accuracy.</span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>Worked closely with product and design teams to deliver polished user experiences.</span>
+                  <span>Developed a personalized Recommendation Engine for <a href="https://wikibedtimestories.com/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-4">WikiBedtimeStories</a> which recommends stories to kids based on their age, interests, and watch history.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Optimized application performance, reducing load times and improving responsiveness in complex UI flows</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Collaborated closely with product and design teams to rapidly ship polished user experiences.</span>
                 </li>
               </ul>
             </motion.div>

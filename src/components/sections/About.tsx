@@ -12,7 +12,7 @@ export function About() {
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
           <p>
-            I am a <strong className="text-foreground font-semibold">Frontend Engineer</strong> with 4+ years of experience building scalable, high-performance web applications. My foundation is deeply rooted in React.js and modern JavaScript ecosystem.
+            I am an <strong className="text-foreground font-semibold">AI Product Engineer</strong> with 4+ years of experience building scalable, high-performance web applications. My foundation is deeply rooted in <strong className="text-foreground font-semibold">React.js, Next.js</strong> and modern <strong className="text-foreground font-semibold">JavaScript</strong> ecosystem.
           </p>
           <p>
             Beyond frontend architecture, I work with <strong className="text-foreground font-semibold">Golang</strong> for backend systems, enabling me to have a full-stack product mindset. I focus on building complete features, optimizing performance, and ensuring reusable UI systems.

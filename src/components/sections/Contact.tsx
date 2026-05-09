@@ -18,7 +18,7 @@ export function Contact() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-            Let's build something <span className="text-muted-foreground">great</span> together.
+            Let's build something great together.
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
             I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!

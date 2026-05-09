@@ -5,20 +5,69 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const skillCategories = [
   {
-    title: "Frontend",
-    skills: ["React.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS", "Framer Motion"],
+    title: "Frontend & UI",
+    skills: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
   },
   {
-    title: "Backend",
-    skills: ["Golang", "REST APIs", "PostgreSQL", "Redis"],
+    title: "Backend & Infrastructure",
+    skills: [
+      "Golang",
+      "REST APIs",
+      "Postman",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Vector Databases",
+      "ChromaDB",
+    ],
   },
   {
-    title: "Game Dev & 3D",
-    skills: ["Unity3D", "Three.js", "C#", "AR/VR Experiences"],
+    title: "AI Product Engineering",
+    skills: [
+      "AI-assisted Development",
+      "RAG Systems",
+      "Prompt Engineering",
+      "LLM Integrations",
+      "Rapid Prototyping",
+      "Fullstack Systems",
+    ],
   },
   {
-    title: "Tools & Other",
-    skills: ["Git", "Vite", "Figma", "DSA (300+ LeetCode)"],
+    title: "3D & Interactive Experiences",
+    skills: [
+      "Unity3D",
+      "Three.js",
+      "AR/VR Experiences",
+      "Interactive UI",
+    ],
+  },
+  {
+    title: "AI & Creative Tools",
+    skills: [
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "Veo 3",
+      "Cursor",
+      "Figma",
+    ],
+  },
+  {
+    title: "Tools & Workflow",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Antigravity",
+      "Codex",
+    ],
   },
 ]
 
