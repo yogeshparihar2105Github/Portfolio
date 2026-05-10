@@ -29,7 +29,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-4"
+          className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text bg-gradient-to-b from-white to-white/60 pb-4"
         >
           AI Product Engineer
         </motion.h1>

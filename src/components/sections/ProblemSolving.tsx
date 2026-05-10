@@ -32,7 +32,7 @@ export function ProblemSolving() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {["Arrays", "LinkedList", "Hashmap", "Stack & Queue", "Searching & Sorting Algorithms", "Dynamic Programming", "Recursion", "Trees", "Graphs"].map((topic) => (
                 <div key={topic} className="flex items-center gap-2 text-sm text-muted-foreground bg-secondary/30 px-3 py-2 rounded-lg border border-border/50">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" />
+                  <CheckCircle2 className="w-4 h-4 shrink-0 text-green-500" />
                   {topic}
                 </div>
               ))}
