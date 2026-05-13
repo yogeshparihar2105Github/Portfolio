@@ -107,6 +107,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  a, button, [role="button"] {
+    cursor: pointer;
+  }
 }
 
 /* Custom Scrollbar for Lenis / Smooth Scrolling look */

@@ -34,6 +34,10 @@ export function Contact() {
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
+          
+          <div className="mt-10 text-center text-muted-foreground">
+            <p>Or reach me directly at <a href="mailto:yogeshparihar2105@gmail.com" className="font-medium text-foreground hover:underline transition-colors">yogeshparihar2105@gmail.com</a></p>
+          </div>
         </motion.div>
       </div>
     </Section>
