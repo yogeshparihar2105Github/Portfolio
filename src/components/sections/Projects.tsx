@@ -36,6 +36,16 @@ const projects = [
     link: "https://wikibedtimestories.com/",
     image: "/wikibedtimestories.png",
   },
+  {
+    title: "Copy Clean",
+    description:
+      "A privacy-first Chrome Extension that allows users to copy and format text, tables, and other contents cleanly from any web page using context menus and local text processing.",
+    tech: ["Chrome Extension", "Manifest V3", "JavaScript", "HTML", "CSS"],
+    placeholderText: "Clipboard Clean-up Extension",
+    color: "from-cyan-500/20 to-teal-500/20",
+    link: "https://github.com/yogeshparihar2105/Copy-Clean",
+    image: "/copy-clean.png",
+  },
 ]
 
 export function Projects() {

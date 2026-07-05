@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
+import { useLocation, useNavigate } from "react-router-dom"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -15,6 +16,8 @@ const navLinks = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +29,16 @@ export function Navbar() {
 
   const scrollTo = (href: string) => {
     setMobileMenuOpen(false)
+    if (location.pathname !== "/") {
+      navigate("/" + href)
+      setTimeout(() => {
+        const element = document.querySelector(href)
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" })
+        }
+      }, 100)
+      return
+    }
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
@@ -43,8 +56,16 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 max-w-5xl flex items-center justify-between">
         <a
-          href="#"
-          onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+          href="/"
+          onClick={(e) => { 
+            e.preventDefault(); 
+            if (location.pathname !== "/") {
+              navigate("/")
+              window.scrollTo(0,0)
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' }) 
+            }
+          }}
           className="text-xl font-bold tracking-tighter"
         >
           Yogesh Parihar

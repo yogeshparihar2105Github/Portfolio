@@ -12,6 +12,7 @@ const skillCategories = [
       "TypeScript",
       "JavaScript",
       "Tailwind CSS",
+      "Chrome Extensions",
       "Framer Motion",
     ],
   },
