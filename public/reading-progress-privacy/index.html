@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Reading Progress</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Privacy Policy for Reading Progress Chrome extension. Read about our local processing, zero data collection, and privacy-first design.">
+  <meta name="keywords" content="Reading Progress, Privacy Policy, Chrome Extension, Privacy First">
+  <meta name="author" content="Yogesh Parihar">
+  
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --background: #0a0a0b;
+      --foreground: #ffffff;
+      --card: #121214;
+      --border: #27272a;
+      --primary: #ffffff;
+      --muted: #a1a1aa;
+      --accent-cyan: #06b6d4;
+      --accent-teal: #14b8a6;
+      --radius: 1rem;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1.5rem;
+    }
+
+    /* Container */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
+
+    /* Header Nav */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      color: var(--foreground);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.025em;
+      transition: opacity 0.2s;
+    }
+
+    header a:hover {
+      opacity: 0.8;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .back-btn:hover {
+      color: var(--foreground);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-1px);
+    }
+
+    /* Privacy Card */
+    .privacy-card {
+      background: rgba(18, 18, 20, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), 
+                  inset 0 1px 1px rgba(255, 255, 255, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Glowing decorative top border */
+    .privacy-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-teal));
+    }
+
+    /* Header text within card */
+    .card-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      background: rgba(6, 182, 212, 0.1);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(6, 182, 212, 0.2);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .updated-date {
+      color: var(--muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .intro {
+      font-size: 1.125rem;
+      color: var(--foreground);
+      margin-bottom: 2.5rem;
+      border-left: 3px solid var(--accent-cyan);
+      padding-left: 1.25rem;
+    }
+
+    /* Policy Sections */
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--foreground);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-size: 0.975rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+      font-size: 0.975rem;
+    }
+
+    li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent-teal);
+      font-weight: bold;
+    }
+
+    .contact-info {
+      background: rgba(39, 39, 42, 0.3);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-info strong {
+      color: var(--foreground);
+    }
+
+    .contact-info a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/">Yogesh Parihar</a>
+      <a href="/" class="back-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Portfolio
+      </a>
+    </header>
+
+    <main class="privacy-card">
+      <div class="card-header">
+        <span class="badge">Chrome Extension</span>
+        <h1>Privacy Policy for Reading Progress</h1>
+        <div class="updated-date">Last updated: July 17, 2026</div>
+      </div>
+
+      <p class="intro">
+        Reading Progress ("the Extension") is committed to protecting your privacy.
+      </p>
+
+      <section>
+        <h2>Information We Collect</h2>
+        <p>Reading Progress does not collect, store, transmit, or sell any personal information.</p>
+        <p>The extension does not collect:</p>
+        <ul>
+          <li>Personal information</li>
+          <li>Email addresses</li>
+          <li>Names</li>
+          <li>Passwords</li>
+          <li>Payment information</li>
+          <li>Browsing history</li>
+          <li>Location data</li>
+          <li>Website content</li>
+          <li>User activity</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Local Storage</h2>
+        <p>The extension stores user preferences locally on your device using Chrome's <code>chrome.storage.local</code> API.</p>
+        <p>This may include:</p>
+        <ul>
+          <li>Reading speed preference</li>
+          <li>Progress bar color</li>
+          <li>Theme selection</li>
+          <li>Widget position</li>
+          <li>Widget visibility</li>
+          <li>Progress bar thickness</li>
+        </ul>
+        <p>These settings never leave your computer.</p>
+      </section>
+
+      <section>
+        <h2>Website Access</h2>
+        <p>The extension runs on webpages in order to:</p>
+        <ul>
+          <li>Calculate reading progress</li>
+          <li>Estimate reading time</li>
+          <li>Display the reading progress bar</li>
+          <li>Display the floating reading widget</li>
+        </ul>
+        <p>All processing happens locally inside your browser.</p>
+        <p>No webpage content is transmitted to any server.</p>
+      </section>
+
+      <section>
+        <h2>Data Sharing</h2>
+        <p>Reading Progress does not:</p>
+        <ul>
+          <li>Sell user data</li>
+          <li>Share user data</li>
+          <li>Transfer user data to third parties</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Analytics</h2>
+        <p>Reading Progress does not use:</p>
+        <ul>
+          <li>Google Analytics</li>
+          <li>Tracking pixels</li>
+          <li>Cookies</li>
+          <li>Advertising services</li>
+          <li>Telemetry</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Remote Code</h2>
+        <p>The extension does not load or execute remote code. All code is packaged within the extension submitted to the Chrome Web Store.</p>
+      </section>
+
+      <section>
+        <h2>Children's Privacy</h2>
+        <p>Reading Progress does not knowingly collect any information from children.</p>
+      </section>
+
+      <section>
+        <h2>Changes to This Privacy Policy</h2>
+        <p>If this Privacy Policy changes, the updated version will be published at this page.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>If you have any questions regarding this Privacy Policy, please contact:</p>
+        <div class="contact-info">
+          <p><strong>Yogesh Parihar</strong></p>
+          <p>Email: <a href="mailto:yogeshparihar2105@gmail.com">yogeshparihar2105@gmail.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Yogesh Parihar. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

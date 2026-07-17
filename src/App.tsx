@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
 import { Home } from "@/pages/Home"
 import { CopyCleanPrivacy } from "@/pages/CopyCleanPrivacy"
+import { ReadingProgressPrivacy } from "@/pages/ReadingProgressPrivacy"
 
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -18,6 +19,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/copy-clean-privacy" element={<CopyCleanPrivacy />} />
+              <Route path="/reading-progress-privacy" element={<ReadingProgressPrivacy />} />
             </Routes>
           </main>
 
