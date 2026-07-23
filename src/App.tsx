@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer"
 import { Home } from "@/pages/Home"
 import { CopyCleanPrivacy } from "@/pages/CopyCleanPrivacy"
 import { ReadingProgressPrivacy } from "@/pages/ReadingProgressPrivacy"
+import { PixelPomodoroPrivacy } from "@/pages/PixelPomodoroPrivacy"
 
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -20,6 +21,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/copy-clean-privacy" element={<CopyCleanPrivacy />} />
               <Route path="/reading-progress-privacy" element={<ReadingProgressPrivacy />} />
+              <Route path="/pixel-pomodoro-privacy" element={<PixelPomodoroPrivacy />} />
             </Routes>
           </main>
 
