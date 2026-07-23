@@ -46,6 +46,16 @@ const projects = [
     link: "https://chromewebstore.google.com/detail/edcifkihiaeeefanknocfiikbfklinln?utm_source=item-share-cb",
     image: "/copy-clean.png",
   },
+  {
+    title: "Reading Progress",
+    description:
+      "A customizable Chrome Extension that displays an interactive reading progress bar and floating widget on web pages, estimating reading time, WPM, and scroll progress in real time.",
+    tech: ["Chrome Extension", "Manifest V3", "JavaScript", "HTML", "CSS"],
+    placeholderText: "Reading Progress Extension",
+    color: "from-indigo-500/20 to-purple-500/20",
+    link: "https://chromewebstore.google.com/detail/foniaoecamcocapmnafnmlifhpfoohim?utm_source=item-share-cb",
+    image: "/reading-progress.png",
+  },
 ]
 
 export function Projects() {
