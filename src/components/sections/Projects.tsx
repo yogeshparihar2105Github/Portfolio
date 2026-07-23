@@ -56,6 +56,16 @@ const projects = [
     link: "https://chromewebstore.google.com/detail/foniaoecamcocapmnafnmlifhpfoohim?utm_source=item-share-cb",
     image: "/reading-progress.png",
   },
+  {
+    title: "PixelPomodoro",
+    description:
+      "A cozy pixel-art productivity timer Chrome Extension featuring an interactive room background with dynamic day/night lighting, ambient weather, customizable timer intervals, focus streak tracking, and milestone achievements.",
+    tech: ["Chrome Extension", "Manifest V3", "JavaScript", "HTML", "CSS"],
+    placeholderText: "Cozy Pixel-Art Pomodoro Timer",
+    color: "from-rose-500/20 to-red-500/20",
+    link: "https://chromewebstore.google.com/detail/dgjkkdicbccdfemdpalpljcndjcehamo?utm_source=item-share-cb",
+    image: "/pixel-pomodoro.png",
+  },
 ]
 
 export function Projects() {
